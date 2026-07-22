@@ -1,4 +1,4 @@
-package com.intellij;
+package org.pqc.demo;
 
 import javax.crypto.*;
 import javax.net.ssl.SSLContext;
@@ -10,9 +10,7 @@ import java.security.Signature;
 import java.security.cert.CertificateException;
 import java.security.cert.CertificateFactory;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
+public class PQCDemo {
     private static void sign(String algorithm) throws NoSuchAlgorithmException {
         Signature.getInstance(algorithm);
     }
