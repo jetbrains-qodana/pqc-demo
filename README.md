@@ -57,6 +57,6 @@ docker run --rm -it \
     -e QODANA_TOKEN="$QODANA_TOKEN" \
     -v "$(pwd)":/data/project/ \
     -v "$(pwd)/.qodana/results":/data/results \
-    registry.jetbrains.team/p/sa/containers/qodana-jvm:latest \
+    jetbrains/qodana-jvm:latest \
     --show-report
 ```
