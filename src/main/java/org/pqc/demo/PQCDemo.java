@@ -16,7 +16,7 @@ import java.security.cert.CertificateFactory;
 
 public class PQCDemo {
 
-    private static void sign(String algorithm) throws NoSuchAlgorithmException {
+    private static void obtainSignature(String algorithm) throws NoSuchAlgorithmException {
         Signature.getInstance(algorithm);
     }
 
@@ -26,8 +26,8 @@ public class PQCDemo {
         Signature.getInstance("Ed25519"); // pre-quantum
 
         // taint suport
-        sign("ECDSA"); // pre-quantum
-        sign(AlgorithmConstants.RSA); // pre-quantum
+        obtainSignature("ECDSA"); // pre-quantum
+        obtainSignature(AlgorithmConstants.SHA_256_WITH_RSA); // pre-quantum
 
         // detect algorithms not satisfying an NIST post-quantum cryptography security level
         Signature.getInstance("ML-DSA-44"); // level 2
