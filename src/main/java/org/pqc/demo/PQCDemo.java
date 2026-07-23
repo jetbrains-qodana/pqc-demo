@@ -25,7 +25,7 @@ public class PQCDemo {
         // Cryptography Algorithm Detections
         Signature.getInstance("Ed25519"); // pre-quantum
 
-        // taint suport
+        // taint support
         obtainSignature("ECDSA"); // pre-quantum
         obtainSignature(AlgorithmConstants.SHA_256_WITH_RSA); // pre-quantum
 
