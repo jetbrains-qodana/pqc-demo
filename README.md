@@ -1,10 +1,10 @@
 # PQC Demo Project
 
-Qodana for JVM includes inspections that flag cryptographic code which should be
+Qodana for JVM includes inspections that flag cryptographic code that should be
 migrated to post-quantum cryptography (PQC).
 
-This project is a minimal, self-contained example exercises signatures, hashes, key agreement, 
-ciphers, TLS protocols, and custom providers so you can see exactly which calls each inspection level reports.
+This project is a minimal, self-contained example that exercises signatures, hashes, key agreement,
+ciphers, SSL protocols, and custom providers so you can see exactly which calls each inspection level reports.
 
 ## References
 
@@ -17,13 +17,13 @@ The inspections are grouped into five levels. Each level is cumulative — it in
 every level below it — and maps to a NIST PQC security level. Higher levels are
 stricter and report more code.
 
-| Level          | Meaning                                                          |
-|----------------|------------------------------------------------------------------|
-| `PqcMinLevel1` | Informational recommendations for future PQC migration.          |
-| `PqcMinLevel2` | Recommend beginning migration planning. Includes Level 1.        |
-| `PqcMinLevel3` | Recommend active migration to PQC. Includes Levels 1–2.          |
-| `PqcMinLevel4` | Flag cryptography nearing the end of its recommended use. Includes Levels 1–3. |
-| `PqcMinLevel5` | Flag cryptography that should no longer be used. Includes Levels 1–4. |
+| Level          | Meaning                                                                                    |
+|----------------|--------------------------------------------------------------------------------------------|
+| `PqcMinLevel1` | Flag pre-quantum and legacy cryptography. This uncovers the most critical vulnerabilities. |
+| `PqcMinLevel2` | Flag baseline post-quantum algorithms. Includes PqcMinLevel1.                              |
+| `PqcMinLevel3` | Flag standard-strength post-quantum algorithms. Includes PqcMinLevel1–2.                   |
+| `PqcMinLevel4` | Flag high-strength post-quantum algorithms. Includes PqcMinLevel1–3.                       |
+| `PqcMinLevel5` | Flag all algorithms except those providing maximum security. Includes PqcMinLevel1-4       |
 
 ## Configuration
 
@@ -38,11 +38,11 @@ profile:
   inspections:
     # Choose the PQC inspection level below. Each level is cumulative and includes
     # every level below it:
-    #   PqcMinLevel1 – Informational recommendations for future PQC migration.
-    #   PqcMinLevel2 – Recommend beginning migration planning. Includes Level 1.
-    #   PqcMinLevel3 – Recommend active migration to PQC. Includes Levels 1–2.
-    #   PqcMinLevel4 – Flag cryptography nearing the end of its recommended use. Includes Levels 1–3.
-    #   PqcMinLevel5 – Flag cryptography that should no longer be used. Includes Levels 1–4.
+    #   PqcMinLevel1 – Flag pre-quantum and legacy cryptography. This uncovers the most critical vulnerabilities.
+    #   PqcMinLevel2 – Flag baseline post-quantum algorithms. Includes PqcMinLevel1.
+    #   PqcMinLevel3 – Flag standard-strength post-quantum algorithms. Includes PqcMinLevel1–2.
+    #   PqcMinLevel4 – Flag high-strength post-quantum algorithms. Includes PqcMinLevel1–3.
+    #   PqcMinLevel5 – Flag all algorithms except those providing maximum security. Includes PqcMinLevel1-4
     - group: PqcMinLevel5
       enabled: true
 ```
