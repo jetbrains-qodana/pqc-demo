@@ -10,3 +10,4 @@ build/
 
 # Qodana analysis results
 .qodana/
+.repograph/

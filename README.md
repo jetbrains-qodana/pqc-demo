@@ -60,3 +60,18 @@ docker run --rm -it \
     jetbrains/qodana-jvm:latest \
     --show-report
 ```
+
+## Expected traces
+
+File [`expected-traces/pqc-ground-truth.json`](expected-traces/pqc-ground-truth.json) contains the
+ground truth for the project.
+
+The `expectedIssues` map is keyed by inspection id and each entry lists the file and the lines
+that inspection should flag:
+
+```json
+"JavaKotlinUsingCryptographySignatureRSA": [
+  { "fileId": "src/main/java/org/pqc/demo/AlgorithmConstants.java", "lines": [2] },
+  { "fileId": "src/main/java/org/pqc/demo/PQCDemo.java", "lines": [26] }
+]
+```

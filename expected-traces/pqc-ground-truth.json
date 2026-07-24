@@ -1,0 +1,94 @@
+{
+  "benchmark": "pqc-demo",
+  "version": "1.0",
+  "_note": "Expected issues were snapshotted from a Qodana scan (QDJVM, PqcMinLevel5 profile) at commit d6f9150a7e9a52b36c97dd869df2dbd3582e1cc8, one expected sink per reported finding (its primary location).",
+  "expectedIssues": {
+    "CryptoProviderSpecification": [
+      {
+        "fileId": "src/main/java/org/pqc/demo/PQCDemo.java",
+        "lines": [
+          77
+        ]
+      }
+    ],
+    "JavaKotlinUsingCryptographyCipherRSA": [
+      {
+        "fileId": "src/main/java/org/pqc/demo/complexCipherPackage/CipherConfiguration.java",
+        "lines": [
+          7
+        ]
+      }
+    ],
+    "JavaKotlinUsingCryptographyKeyAgreementDiffieHellman": [
+      {
+        "fileId": "src/main/java/org/pqc/demo/PQCDemo.java",
+        "lines": [
+          45
+        ]
+      }
+    ],
+    "JavaKotlinUsingCryptographyMessageDigestMD5": [
+      {
+        "fileId": "src/main/java/org/pqc/demo/PQCDemo.java",
+        "lines": [
+          38
+        ]
+      }
+    ],
+    "JavaKotlinUsingCryptographySSLContextTLS12": [
+      {
+        "fileId": "src/main/java/org/pqc/demo/complexSslContextPackage/SslProtocolNames.java",
+        "lines": [
+          2
+        ]
+      }
+    ],
+    "JavaKotlinUsingCryptographySignatureECDSA": [
+      {
+        "fileId": "src/main/java/org/pqc/demo/PQCDemo.java",
+        "lines": [
+          26
+        ]
+      }
+    ],
+    "JavaKotlinUsingCryptographySignatureEd25519": [
+      {
+        "fileId": "src/main/java/org/pqc/demo/PQCDemo.java",
+        "lines": [
+          23
+        ]
+      }
+    ],
+    "JavaKotlinUsingCryptographySignatureRSA": [
+      {
+        "fileId": "src/main/java/org/pqc/demo/AlgorithmConstants.java",
+        "lines": [
+          2
+        ]
+      },
+      {
+        "fileId": "src/main/java/org/pqc/demo/PQCDemo.java",
+        "lines": [
+          26
+        ]
+      }
+    ],
+    "SslParametersModification": [
+      {
+        "fileId": "src/main/java/org/pqc/demo/PQCDemo.java",
+        "lines": [
+          71,
+          72
+        ]
+      }
+    ],
+    "SslParametersNonDefaultConstructors": [
+      {
+        "fileId": "src/main/java/org/pqc/demo/PQCDemo.java",
+        "lines": [
+          68
+        ]
+      }
+    ]
+  }
+}
