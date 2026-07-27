@@ -1,7 +1,7 @@
 {
   "benchmark": "pqc-demo",
   "version": "1.0",
-  "_note": "Expected issues were snapshotted from a Qodana scan (QDJVM, PqcMinLevel5 profile) at commit 9d7ede7bf4ffe23855850f8af46e23471cb42e5d, one expected sink per reported finding (its primary location).",
+  "_note": "Expected issues were snapshotted from a Qodana scan (QDJVM, PqcMinLevel5 profile) at commit cb0ec3056109f94afaca3bd7afe0df3f4e60202d, one expected sink per reported finding (its primary location).",
   "expectedIssues": {
     "CryptoProviderSpecification": [
       {
@@ -19,14 +19,6 @@
         ]
       }
     ],
-    "JavaKotlinUsingCryptographyKEMMLKEM512": [
-      {
-        "fileId": "src/main/java/org/pqc/demo/PQCDemo.java",
-        "lines": [
-          49
-        ]
-      }
-    ],
     "JavaKotlinUsingCryptographyKeyAgreementDiffieHellman": [
       {
         "fileId": "src/main/java/org/pqc/demo/PQCDemo.java",
@@ -35,35 +27,11 @@
         ]
       }
     ],
-    "JavaKotlinUsingCryptographyMacSHA1": [
-      {
-        "fileId": "src/main/java/org/pqc/demo/PQCDemo.java",
-        "lines": [
-          39
-        ]
-      }
-    ],
     "JavaKotlinUsingCryptographyMessageDigestMD5": [
       {
         "fileId": "src/main/java/org/pqc/demo/PQCDemo.java",
         "lines": [
           38
-        ]
-      }
-    ],
-    "JavaKotlinUsingCryptographyMessageDigestSHA224": [
-      {
-        "fileId": "src/main/java/org/pqc/demo/PQCDemo.java",
-        "lines": [
-          41
-        ]
-      }
-    ],
-    "JavaKotlinUsingCryptographyMessageDigestSHAKE128": [
-      {
-        "fileId": "src/main/java/org/pqc/demo/PQCDemo.java",
-        "lines": [
-          40
         ]
       }
     ],
@@ -79,7 +47,7 @@
       {
         "fileId": "src/main/java/org/pqc/demo/PQCDemo.java",
         "lines": [
-          26
+          24
         ]
       }
     ],
@@ -91,19 +59,11 @@
         ]
       }
     ],
-    "JavaKotlinUsingCryptographySignatureMLDSA44": [
+    "JavaKotlinUsingCryptographySignatureRSA": [
       {
-        "fileId": "src/main/java/org/pqc/demo/PQCDemo.java",
+        "fileId": "src/main/java/org/pqc/demo/AlgorithmConstants.java",
         "lines": [
-          30
-        ]
-      }
-    ],
-    "JavaKotlinUsingCryptographySignatureMLDSA65": [
-      {
-        "fileId": "src/main/java/org/pqc/demo/PQCDemo.java",
-        "lines": [
-          31
+          2
         ]
       }
     ],
