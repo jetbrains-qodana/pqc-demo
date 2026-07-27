@@ -50,8 +50,6 @@ public class PQCDemo {
         String keyTransportAlgorithm;
         if (randomNumber < 10) {
             keyTransportAlgorithm = "ML-KEM-512"; // level 1
-        } else if (randomNumber < 100) {
-            keyTransportAlgorithm = "ML-KEM-768"; // level 3
         } else {
             keyTransportAlgorithm = "ML-KEM-1024"; // level 5
         }
