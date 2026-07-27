@@ -24,10 +24,10 @@ public class PQCDemo {
             CertificateException, IOException {
         // Cryptography Algorithm Detections
         Signature.getInstance("Ed25519"); // pre-quantum
+        Signature.getInstance("ECDSA"); // pre-quantum
 
         // taint support
-        obtainSignature("ECDSA"); // pre-quantum
-        Signature.getInstance(AlgorithmConstants.SHA_256_WITH_RSA); // pre-quantum
+        obtainSignature(AlgorithmConstants.SHA_256_WITH_RSA); // pre-quantum
 
         // detect algorithms not satisfying an NIST post-quantum cryptography security level
         Signature.getInstance("ML-DSA-44"); // level 2
