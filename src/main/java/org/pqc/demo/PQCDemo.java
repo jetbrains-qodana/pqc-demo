@@ -27,7 +27,7 @@ public class PQCDemo {
 
         // taint support
         obtainSignature("ECDSA"); // pre-quantum
-        obtainSignature(AlgorithmConstants.SHA_256_WITH_RSA); // pre-quantum
+        Signature.getInstance(AlgorithmConstants.SHA_256_WITH_RSA); // pre-quantum
 
         // detect algorithms not satisfying an NIST post-quantum cryptography security level
         Signature.getInstance("ML-DSA-44"); // level 2
