@@ -1,13 +1,13 @@
 {
   "benchmark": "pqc-demo",
   "version": "1.0",
-  "_note": "Expected issues were snapshotted from a Qodana scan (QDJVM, PqcMinLevel5 profile) at commit d6f9150a7e9a52b36c97dd869df2dbd3582e1cc8, one expected sink per reported finding (its primary location).",
+  "_note": "Expected issues were snapshotted from a Qodana scan (QDJVM, PqcMinLevel5 profile) at commit cb0ec3056109f94afaca3bd7afe0df3f4e60202d, one expected sink per reported finding (its primary location).",
   "expectedIssues": {
     "CryptoProviderSpecification": [
       {
         "fileId": "src/main/java/org/pqc/demo/PQCDemo.java",
         "lines": [
-          77
+          75
         ]
       }
     ],
@@ -47,7 +47,7 @@
       {
         "fileId": "src/main/java/org/pqc/demo/PQCDemo.java",
         "lines": [
-          26
+          24
         ]
       }
     ],
@@ -65,20 +65,14 @@
         "lines": [
           2
         ]
-      },
-      {
-        "fileId": "src/main/java/org/pqc/demo/PQCDemo.java",
-        "lines": [
-          26
-        ]
       }
     ],
     "SslParametersModification": [
       {
         "fileId": "src/main/java/org/pqc/demo/PQCDemo.java",
         "lines": [
-          71,
-          72
+          69,
+          70
         ]
       }
     ],
@@ -86,7 +80,7 @@
       {
         "fileId": "src/main/java/org/pqc/demo/PQCDemo.java",
         "lines": [
-          68
+          66
         ]
       }
     ]

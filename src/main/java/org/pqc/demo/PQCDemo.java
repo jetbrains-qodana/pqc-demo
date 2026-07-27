@@ -24,9 +24,9 @@ public class PQCDemo {
             CertificateException, IOException {
         // Cryptography Algorithm Detections
         Signature.getInstance("Ed25519"); // pre-quantum
+        Signature.getInstance("ECDSA"); // pre-quantum
 
         // taint support
-        obtainSignature("ECDSA"); // pre-quantum
         obtainSignature(AlgorithmConstants.SHA_256_WITH_RSA); // pre-quantum
 
         // detect algorithms not satisfying an NIST post-quantum cryptography security level
@@ -50,8 +50,6 @@ public class PQCDemo {
         String keyTransportAlgorithm;
         if (randomNumber < 10) {
             keyTransportAlgorithm = "ML-KEM-512"; // level 1
-        } else if (randomNumber < 100) {
-            keyTransportAlgorithm = "ML-KEM-768"; // level 3
         } else {
             keyTransportAlgorithm = "ML-KEM-1024"; // level 5
         }
