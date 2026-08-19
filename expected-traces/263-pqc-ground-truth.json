@@ -1,0 +1,136 @@
+{
+  "benchmark": "pqc-demo",
+  "version": "1.0",
+  "_note": "Expected issues were snapshotted from a Qodana scan (QDJVM 263.3511) at commit f31c177b61511aa66b6d9a74e9c08f6df9f97bed, one expected sink per reported finding (its primary location).",
+  "expectedIssues": {
+    "CryptoProviderSpecification": [
+      {
+        "fileId": "src/main/java/org/pqc/demo/PQCDemo.java",
+        "lines": [
+          75
+        ]
+      }
+    ],
+    "JavaKotlinUsingCryptographyCipherRSA": [
+      {
+        "fileId": "src/main/java/org/pqc/demo/complexCipherPackage/CipherConfiguration.java",
+        "lines": [
+          7
+        ]
+      }
+    ],
+    "JavaKotlinUsingCryptographyKEMMLKEM512": [
+      {
+        "fileId": "src/main/java/org/pqc/demo/PQCDemo.java",
+        "lines": [
+          49
+        ]
+      }
+    ],
+    "JavaKotlinUsingCryptographyKeyAgreementDiffieHellman": [
+      {
+        "fileId": "src/main/java/org/pqc/demo/PQCDemo.java",
+        "lines": [
+          48
+        ]
+      }
+    ],
+    "JavaKotlinUsingCryptographyMacSHA1": [
+      {
+        "fileId": "src/main/java/org/pqc/demo/PQCDemo.java",
+        "lines": [
+          42
+        ]
+      }
+    ],
+    "JavaKotlinUsingCryptographyMessageDigestMD5": [
+      {
+        "fileId": "src/main/java/org/pqc/demo/PQCDemo.java",
+        "lines": [
+          41
+        ]
+      }
+    ],
+    "JavaKotlinUsingCryptographyMessageDigestSHA224": [
+      {
+        "fileId": "src/main/java/org/pqc/demo/PQCDemo.java",
+        "lines": [
+          44
+        ]
+      }
+    ],
+    "JavaKotlinUsingCryptographyMessageDigestSHAKE128": [
+      {
+        "fileId": "src/main/java/org/pqc/demo/PQCDemo.java",
+        "lines": [
+          43
+        ]
+      }
+    ],
+    "JavaKotlinUsingCryptographySSLContextTLS12": [
+      {
+        "fileId": "src/main/java/org/pqc/demo/complexSslContextPackage/SslProtocolNames.java",
+        "lines": [
+          2
+        ]
+      }
+    ],
+    "JavaKotlinUsingCryptographySignatureECDSA": [
+      {
+        "fileId": "src/main/java/org/pqc/demo/PQCDemo.java",
+        "lines": [
+          27
+        ]
+      }
+    ],
+    "JavaKotlinUsingCryptographySignatureEd25519": [
+      {
+        "fileId": "src/main/java/org/pqc/demo/PQCDemo.java",
+        "lines": [
+          26
+        ]
+      }
+    ],
+    "JavaKotlinUsingCryptographySignatureMLDSA44": [
+      {
+        "fileId": "src/main/java/org/pqc/demo/PQCDemo.java",
+        "lines": [
+          33
+        ]
+      }
+    ],
+    "JavaKotlinUsingCryptographySignatureMLDSA65": [
+      {
+        "fileId": "src/main/java/org/pqc/demo/PQCDemo.java",
+        "lines": [
+          34
+        ]
+      }
+    ],
+    "JavaKotlinUsingCryptographySignatureRSA": [
+      {
+        "fileId": "src/main/java/org/pqc/demo/AlgorithmConstants.java",
+        "lines": [
+          2
+        ]
+      }
+    ],
+    "SslParametersModification": [
+      {
+        "fileId": "src/main/java/org/pqc/demo/PQCDemo.java",
+        "lines": [
+          69,
+          70
+        ]
+      }
+    ],
+    "SslParametersNonDefaultConstructors": [
+      {
+        "fileId": "src/main/java/org/pqc/demo/PQCDemo.java",
+        "lines": [
+          66
+        ]
+      }
+    ]
+  }
+}
