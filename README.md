@@ -15,21 +15,13 @@ ciphers, SSL protocols, and custom providers so you can see exactly which calls 
 
 The inspections are grouped into five levels. Each level is cumulative — it includes
 every level below it — and maps to a NIST PQC security level. Higher levels are
-stricter and report more code.
-
-| Level          | Meaning                                                                                    |
-|----------------|--------------------------------------------------------------------------------------------|
-| `PqcMinLevel1` | Flag pre-quantum and legacy cryptography. This uncovers the most critical vulnerabilities. |
-| `PqcMinLevel2` | Flag baseline post-quantum algorithms. Includes PqcMinLevel1.                              |
-| `PqcMinLevel3` | Flag standard-strength post-quantum algorithms. Includes PqcMinLevel1–2.                   |
-| `PqcMinLevel4` | Flag high-strength post-quantum algorithms. Includes PqcMinLevel1–3.                       |
-| `PqcMinLevel5` | Flag all algorithms except those providing maximum security. Includes PqcMinLevel1-4       |
+stricter and report more code. See [Post-quantum cryptography (PQC): Inspection groups](https://www.jetbrains.com/help/qodana/post-quantum-cryptography.html#pqc-inspection-groups) for more details.
 
 ## Configuration
 
 One level is enabled at a time in [`qodana.yaml`](qodana.yaml). To switch levels,
 change the `group` value to the level you want (`PqcMinLevel1` through
-`PqcMinLevel5`):
+`PqcMinLevel5` or use `AllPqcInspections` to enable them all):
 
 ```yaml
 version: "1.0"
@@ -43,7 +35,8 @@ profile:
     #   PqcMinLevel3 – Flag standard-strength post-quantum algorithms. Includes PqcMinLevel1–2.
     #   PqcMinLevel4 – Flag high-strength post-quantum algorithms. Includes PqcMinLevel1–3.
     #   PqcMinLevel5 – Flag all algorithms except those providing maximum security. Includes PqcMinLevel1-4
-    - group: PqcMinLevel5
+    #   AllPqcInspections - Enable every PQC inspection levels 1-5. Also reports compliant algorithms.
+    - group: AllPqcInspections
       enabled: true
 ```
 
